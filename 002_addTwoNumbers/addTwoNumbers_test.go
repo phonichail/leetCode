@@ -26,7 +26,6 @@ func testHelperAddTwoNumbers(expected *ListNode, got *ListNode) bool {
 	y := got
 	for x := expected; x != nil; x = x.next {
 		if x.val != y.val {
-			//println("Expected: ", x.val, "  Got:", y.val)
 			return false
 		}
 		y = y.next
